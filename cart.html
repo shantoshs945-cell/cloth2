@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed-variant": "#6e3900",
+          "on-primary-fixed-variant": "#920029",
+          "on-primary-container": "#ffd0d2",
+          "on-secondary": "#ffffff",
+          "surface-container-highest": "#d5e3fc",
+          "inverse-primary": "#ffb2b7",
+          "tertiary": "#00533b",
+          "secondary-container": "#fe932c",
+          "inverse-on-surface": "#eaf1ff",
+          "on-tertiary-container": "#90eec5",
+          "outline-variant": "#e3bdbf",
+          "surface-bright": "#f8f9ff",
+          "on-tertiary": "#ffffff",
+          "tertiary-fixed-dim": "#7bd8b1",
+          "surface-variant": "#d5e3fc",
+          "outline": "#8f6f70",
+          "surface-container-lowest": "#ffffff",
+          "secondary": "#904d00",
+          "on-background": "#0d1c2e",
+          "secondary-fixed": "#ffdcc3",
+          "error-container": "#ffdad6",
+          "surface-dim": "#ccdbf3",
+          "on-tertiary-fixed-variant": "#00513a",
+          "on-error-container": "#93000a",
+          "surface-container": "#e6eeff",
+          "surface-tint": "#bb0f3a",
+          "background": "#f8f9ff",
+          "inverse-surface": "#233144",
+          "primary": "#95002a",
+          "on-surface-variant": "#5b4041",
+          "error": "#ba1a1a",
+          "surface-container-high": "#dce9ff",
+          "on-primary-fixed": "#40000d",
+          "tertiary-container": "#006e4f",
+          "on-primary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#ffb2b7",
+          "on-surface": "#0d1c2e",
+          "secondary-fixed-dim": "#ffb77d",
+          "surface": "#f8f9ff",
+          "tertiary-fixed": "#97f5cc",
+          "surface-container-low": "#eff4ff",
+          "on-tertiary-fixed": "#002115",
+          "on-secondary-container": "#663500",
+          "primary-container": "#be123c",
+          "on-secondary-fixed": "#2f1500",
+          "primary-fixed": "#ffdadb"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1rem",
+          "margin": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "0.75rem",
+          "space-xl": "2rem",
+          "gutter-mobile": "0.5rem",
+          "space-lg": "1.25rem",
+          "space-md": "0.75rem"
+        },
+        "fontFamily": {
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-36 max-w-7xl mx-auto px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-gutter pt-space-xs"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-md shrink-0" href="index.html"><img alt="Dakshin Vastra Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhTuPdWxGryJCZJFH7bgwdzXXhM1ZJ1CKDBt_ROqzSOkRTU9h_0Wy7vbcVnd2ZnfFzeHdcGPeZXlxK48ihnBFa2MYZC3oei9TLowBB5HutQs16SzxHqsHQH-saNxj39LZbwcu3oavNCGgYRUmif4Zjh9COzS7oCkshcRYj5kB2i5j-pIc5t5Lp9RZRIEnfsvIZtm-gTPtpeaP5MVNWttnguYXiTKEVTPfe-1jnRN186cdBT9QwzR2f"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">Dakshin Vastra</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Direct Weaver Handlooms</span></div></a></div><div class="flex-1 max-w-2xl px-space-md"><div class="flex items-center bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="material-symbols-outlined text-outline mr-space-xs text-lg">search</span><input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder-on-surface-variant focus:ring-0" placeholder="Search Kanjeevaram, Kasavu, Men's Veshti Sets, Pattu Pavadai, Kurtis..." type="text"/></div></div><div class="flex items-center gap-gutter shrink-0"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-base text-secondary">translate</span><select class="bg-transparent border-0 outline-none font-label-md text-label-md text-on-surface cursor-pointer"><option selected="">EN</option><option>தமிழ்</option><option>తెలుగు</option><option>ಕನ್ನಡ</option><option>മലയാളം</option></select></div><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-base">local_shipping</span>Track Order</a><a class="bg-tertiary text-on-tertiary font-label-md text-label-md px-space-md py-space-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:bg-tertiary-container hover:text-on-tertiary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-base">chat</span>WhatsApp Shop</a><div class="flex items-center gap-gutter pl-space-xs"><a class="flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" href="cart.html"><span class="material-symbols-outlined text-xl text-primary">shopping_bag</span><span class="font-label-md text-label-md font-bold text-primary">Cart (3)</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfHr-DCOTrI1rCfJVEFv91a4i7Lh0280KJ6F33tr8HEfrjdErjIryz_ToQdyopXuHWxY9uQRLddiM9L8DJDSWu64eM3eqskdUbFB_c6nB8htVcYtjQmK-fuDCSbQ_qxBl36G_QD6TUSFVWz4HwqzEuFhIh1aC0VyatvJYOmn4nht-LNCZx8kY_11dDwOBIhOlCA5GCMFwh3CpMdXwq_dIoIW1cFB3atm_o-1eaWFFH45J7gkSUvwC9"/></div></div></div><nav class="flex items-center justify-between overflow-x-auto gap-space-md py-space-sm px-space-sm scrollbar-none bg-gradient-to-r from-[#ffe8f1] via-[#fff2f8] to-[#fce2ee] border-y border-[#d81b60]/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" href="index.html">Home</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" href="mens.html">Men's</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" href="kids.html">Kids</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" href="cart.html">Cart</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="kanjeevaram-silks" href="index.html">Kanjeevaram Silks</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="kerala-kasavu" href="index.html">Kerala Kasavu</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="mens-ethnic-wear" href="mens.html">Men's Ethnic Wear</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="kids-teens-traditionals" href="kids.html">Kids &amp; Teens</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="madurai-chettinad-cottons" href="index.html">Madurai &amp; Chettinad Cottons</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="temple-border-kurtis" href="index.html">Temple Border Kurtis</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="unstitched-dress-materials" href="index.html">Unstitched Dress Materials</a><a class="shrink-0 font-label-lg text-label-lg text-on-surface-variant hover:text-primary border border-[#d81b60]/60 rounded-xl bg-white/80 px-space-md py-space-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="direct-weaver-editions" href="index.html">Direct Weaver Editions</a></nav></div><div class="w-full bg-secondary-fixed text-on-secondary-fixed py-space-xs px-margin"><div class="max-w-7xl mx-auto flex items-center justify-around font-label-md text-label-md"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-secondary">price_check</span>Direct Loom Pricing Guarantee</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-secondary">verified</span>100% Certified Silk Mark Handlooms</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-secondary">payments</span>Cash on Delivery (COD) Available Across India</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-secondary">published_with_changes</span>Hassle-Free 7-Day Exchange</span></div></div></header><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin py-space-lg">
+<!-- Breadcrumb / Stepper Navigation -->
+<div class="mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Guaranteed Authentic Handlooms</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">Shopping Cart &amp; Secure Checkout</h1>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary text-base" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span>End-to-End 256-Bit Encrypted Order Flow</span>
+</div>
+</div>
+<!-- 3-Step Checkout Stepper -->
+<div class="bg-surface-container-low rounded-xl p-space-sm md:p-space-md shadow-sm">
+<div class="grid grid-cols-3 gap-space-xs md:gap-gutter text-center relative">
+<!-- Step 1: Active -->
+<div class="flex items-center gap-space-xs md:gap-space-sm bg-surface-container-lowest p-space-xs md:p-space-sm rounded-lg shadow-sm">
+<div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg shrink-0">1</div>
+<div class="text-left min-w-0">
+<p class="font-label-md text-label-md font-bold text-primary truncate">1. Bag &amp; Sizing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant hidden sm:block truncate">3 South Indian Classics</p>
+</div>
+</div>
+<!-- Step 2: Next -->
+<div class="flex items-center gap-space-xs md:gap-space-sm p-space-xs md:p-space-sm rounded-lg opacity-85">
+<div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-lg text-label-lg shrink-0">2</div>
+<div class="text-left min-w-0">
+<p class="font-label-md text-label-md font-bold text-on-surface truncate">2. Delivery Address</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant hidden sm:block truncate">Free Doorstep Courier</p>
+</div>
+</div>
+<!-- Step 3: Pending -->
+<div class="flex items-center gap-space-xs md:gap-space-sm p-space-xs md:p-space-sm rounded-lg opacity-60">
+<div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-lg text-label-lg shrink-0">3</div>
+<div class="text-left min-w-0">
+<p class="font-label-md text-label-md font-bold text-on-surface truncate">3. Payment</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant hidden sm:block truncate">COD, UPI, Net Banking</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Cart Items & Customization (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Header Ribbon for Items -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">shopping_basket</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Your Bag Items (3)</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-sm py-space-xs rounded-full font-bold">Direct Loom Dispatch</span>
+</div>
+<!-- Product Cards Container -->
+<div class="flex flex-col gap-space-md">
+<!-- Item 1: Women's Saree -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col sm:flex-row gap-space-md transition hover:shadow-md">
+<div class="w-full sm:w-32 h-44 sm:h-40 shrink-0 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Exquisite Royal Mayil motif peacock blue and rani pink pure Kanjeevaram silk saree adorned with gleaming gold zari borders, photographed under soft boutique daylight showcasing fine hand-woven silk luster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMKZVEC9yR5AD_b7WWSQNC-UUosHAMy4b0OzuP0jzSjpsZkqigD_g5TDEvwwTzq9whEWvyrgK1FtEDRt_bP9xSwvECO-DmSGL-5vcBSWy7ZEQpOjNVys4sT4C87UntU2Gk5Uncb_7H6gSBroplf753E39LRTBubffCCHAABZzNvmBMxjTxQualQwtiH8Ux68v8h_tRsLLsK3JnCW0Soxwvnymeoz2R0csOR-gvb7yzjq3R27VaPNky"/>
+<span class="absolute top-space-xs left-space-xs bg-tertiary text-on-tertiary font-label-sm text-label-sm px-space-xs py-0.5 rounded-DEFAULT">Silk Mark</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Women • Kanchipuram Pure Silk</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Royal Mayil Korvai Kanjeevaram Silk Saree</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Weft: Pure Mulberry Silk • Zari: Certified 2G Gold Thread</p>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-space-xs">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Customization / Options -->
+<div class="flex flex-wrap items-center gap-space-sm mt-space-sm font-label-sm text-label-sm">
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant">Blouse:</span>
+<span class="font-bold">Unstitched (0.8m Included)</span>
+</div>
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant">Length:</span>
+<span class="font-bold">6.2 Meters</span>
+</div>
+</div>
+</div>
+<div class="flex items-end justify-between mt-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹14,999</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹22,500</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold ml-space-xs">33% OFF</span>
+</div>
+<!-- Quantity Pill -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded-DEFAULT bg-surface-container-lowest text-on-surface font-bold hover:bg-surface-container transition">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-space-sm font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded-DEFAULT bg-surface-container-lowest text-on-surface font-bold hover:bg-surface-container transition">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Men's Handloom Set -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col sm:flex-row gap-space-md transition hover:shadow-md">
+<div class="w-full sm:w-32 h-44 sm:h-40 shrink-0 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Traditional South Indian men's pure raw silk cream-colored dhoti veshti and matching silk full-sleeve shirt set neatly folded with thick gold temple border accent, pristine studio flatlay lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrwPtpEvPx89YkRz1VZ0WxxTQ_s5fiOH6R2QzfiMdgP70QtC4C9q3RBUkKD1YTcTqGarFV4GvwCUSHl9jpQNH1azgwXq42_Y3tKhpt-uhPoLqwGxvEmzl4L00PlwZxYITlLSTvQq0of4_ehBNcuXGxNwHS5rqOyH4y9xJaX2YlV6H09xVLBFYfc2LS35meKPpHVFMM1AlNMEPKzdQKesBnXY4-HfTEoHQHZisaQ2Y9h6hpYdnUcsM"/>
+<span class="absolute top-space-xs left-space-xs bg-tertiary-container text-on-tertiary font-label-sm text-label-sm px-space-xs py-0.5 rounded-DEFAULT">Handloom</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Men • Wedding &amp; Festive Collection</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Men's Pure Kanchi Silk Dhoti &amp; Shirt Set</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Includes: 8-Muzham Dhoti + Angavastram + Silk Shirt</p>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-space-xs">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Customization / Options -->
+<div class="flex flex-wrap items-center gap-space-sm mt-space-sm font-label-sm text-label-sm">
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant">Shirt Size:</span>
+<select aria-label="Select shirt size" class="bg-transparent border-0 font-label-sm text-label-sm font-bold text-on-surface cursor-pointer focus:ring-0 p-0">
+<option>Size 40 (M)</option>
+<option selected="">Size 42 (L)</option>
+<option>Size 44 (XL)</option>
+</select>
+</div>
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant">Border:</span>
+<span class="font-bold">Mayil Temple Border (2.5 Inch)</span>
+</div>
+</div>
+</div>
+<div class="flex items-end justify-between mt-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹4,250</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹6,500</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold ml-space-xs">35% OFF</span>
+</div>
+<!-- Quantity Pill -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded-DEFAULT bg-surface-container-lowest text-on-surface font-bold hover:bg-surface-container transition">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-space-sm font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded-DEFAULT bg-surface-container-lowest text-on-surface font-bold hover:bg-surface-container transition">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Kids Pattu Pavadai -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col sm:flex-row gap-space-md transition hover:shadow-md">
+<div class="w-full sm:w-32 h-44 sm:h-40 shrink-0 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Traditional young girl's South Indian festive Pattu Pavadai lehenga set in deep emerald green and mango yellow with pure zari checks and broad golden border, styled on an ivory wooden stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY4TW_ZQYcLa7Tfd1k2WtaNLw0yShhnvTfgwGn9mpbNMEEntoammeinoOaGxtFcCekKnis3XBRmlppwdj8gHtw_FOb9vMGpizrUlD5374J4ibpyTgG4ENyG_-fjBwdMIEEESAtb2SEJ-8KEDeDo4MitBlWW25SqcOU-iFDGGY1ctY1f--j2dWJ2KWf7XTtBXILpJxPaPGi_Eid0ncq2o3vGw0gX2JAc3FZfkmyVeDaYZjX4VBLHgnf"/>
+<span class="absolute top-space-xs left-space-xs bg-secondary text-on-secondary font-label-sm text-label-sm px-space-xs py-0.5 rounded-DEFAULT">Festive</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Kids &amp; Girls • Traditional</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Girls Handcrafted Emerald Pattu Pavadai</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Inner Lining: 100% Breathable Cotton • Zero Itch Promise</p>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-space-xs">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Customization / Options -->
+<div class="flex flex-wrap items-center gap-space-sm mt-space-sm font-label-sm text-label-sm">
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant">Age Group:</span>
+<select aria-label="Select age group" class="bg-transparent border-0 font-label-sm text-label-sm font-bold text-on-surface cursor-pointer focus:ring-0 p-0">
+<option>4 - 5 Years</option>
+<option selected="">6 - 7 Years</option>
+<option>8 - 9 Years</option>
+</select>
+</div>
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant">Type:</span>
+<span class="font-bold">Stitched Ready-to-Wear</span>
+</div>
+</div>
+</div>
+<div class="flex items-end justify-between mt-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹2,850</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹4,200</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold ml-space-xs">32% OFF</span>
+</div>
+<!-- Quantity Pill -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded-DEFAULT bg-surface-container-lowest text-on-surface font-bold hover:bg-surface-container transition">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-space-sm font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded-DEFAULT bg-surface-container-lowest text-on-surface font-bold hover:bg-surface-container transition">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Direct Customer Delivery Assurance -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">package_2</span>
+</div>
+<div class="flex-1">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Handloom Direct Protective Packaging</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Each pure silk garment includes an archival muslin cloth saree protector bag and an authentic weaver identification certificate.</p>
+</div>
+</div>
+<!-- WhatsApp Concierge Support Card -->
+<div class="bg-gradient-to-r from-tertiary-fixed-dim/20 to-surface-container-low p-space-md rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Need Help Ordering or Blouse Measurement?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Share your bag with our South Indian textile advisor on WhatsApp for live video preview and fit guidance.</p>
+</div>
+</div>
+<button class="bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-md text-label-md px-space-md py-space-sm rounded-lg flex items-center gap-space-xs shrink-0 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>WhatsApp Cart Assistance</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Transparent Summary & Payment Options (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-40">
+<!-- Order Summary Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface pb-space-xs">Order Bill Summary</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Direct Weaver Pricing Guarantee • No Mid-Channel Markup</p>
+<!-- Coupon Module -->
+<div class="bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs flex-1">
+<span class="material-symbols-outlined text-tertiary text-lg">local_offer</span>
+<span class="font-label-md text-label-md font-bold text-tertiary">FESTIVE100</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-space-xs rounded-DEFAULT">Applied</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline">Remove</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 pl-6">Special ₹100 inaugural festive saving applied.</p>
+</div>
+<!-- Price Line Items -->
+<div class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant pb-space-md">
+<div class="flex justify-between items-center">
+<span>Total Retail MRP (3 Handlooms)</span>
+<span class="text-on-surface line-through font-body-sm text-body-sm">₹33,200</span>
+</div>
+<div class="flex justify-between items-center text-primary font-bold">
+<span>Direct Loom Wholesale Discount</span>
+<span>- ₹11,101</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Coupon Code (FESTIVE100)</span>
+<span class="text-tertiary font-bold">- ₹100</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-space-xs">
+<span>Doorstep Insured Delivery</span>
+<span class="material-symbols-outlined text-outline text-sm">verified_user</span>
+</span>
+<span class="text-tertiary font-bold uppercase font-label-md text-label-md">FREE</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Silk Mark Certification &amp; Authentication</span>
+<span class="text-tertiary font-bold uppercase font-label-md text-label-md">FREE</span>
+</div>
+</div>
+<!-- Total Due Row -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Total Amount Payable</span>
+<p class="font-headline-md text-headline-md font-bold text-primary">₹21,999</p>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">You are saving ₹11,201 today</span>
+</div>
+<div class="text-right">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-sm py-space-xs rounded-full font-bold">Taxes Included</span>
+</div>
+</div>
+<!-- Pincode Check -->
+<div class="mb-space-md">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-space-xs">Estimated Delivery Pincode</label>
+<div class="flex items-center gap-space-xs">
+<div class="flex-1 flex items-center bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-outline mr-space-xs text-base">pin_drop</span>
+<input class="w-full bg-transparent border-0 outline-none font-label-md text-label-md text-on-surface focus:ring-0 p-0" placeholder="Enter 6-digit Pincode" type="text" value="600017"/>
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded-lg transition-colors">
+                Verify
+              </button>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Guaranteed delivery by <strong>Thursday, 24 Oct</strong> to T. Nagar, Chennai
+            </p>
+</div>
+<!-- Accepted Payment Methods Carousel -->
+<div class="mb-space-lg">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-space-xs">Secure Payment Modes Accepted</span>
+<div class="grid grid-cols-4 gap-space-xs text-center">
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">qr_code_2</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">UPI / GPay</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">payments</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">COD Available</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">credit_card</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">Cards &amp; EMI</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">account_balance</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">Net Banking</span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg py-space-md rounded-xl shadow-md transition-all flex items-center justify-center gap-space-sm group">
+<span>Proceed to Secure Pay (₹21,999)</span>
+<span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<p class="font-body-sm text-body-sm text-center text-on-surface-variant mt-space-sm">
+            Cash on Delivery (COD) selectable on the next payment step.
+          </p>
+</div>
+<!-- Trust Badges & Buyer Guarantees -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base">verified</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">100% Pure Silk Mark</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Govt. certified pure silk threads on all sarees.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-base">price_check</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Direct Loom Pricing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Weaver-to-wardrobe with zero retail showroom rent.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-base">lock</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">256-Bit SSL Checkout</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PCI-DSS bank compliant payments engine.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base">published_with_changes</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">7-Day Free Exchange</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hassle-free doorstep pickup &amp; full replacement.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl pt-space-xl pb-space-lg text-on-surface"><div class="max-w-7xl mx-auto px-margin grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs mb-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-primary">Dakshin Vastra</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">South India's authentic direct-to-consumer handloom house. Bringing master-crafted Kanjeevarams, traditional Kasavu sets, festive Pavadais, and handloom men's veshtis straight to your doorstep.</p><div class="flex items-center gap-space-xs mt-space-xs font-label-md text-label-md text-tertiary"><span class="material-symbols-outlined text-base">verified</span>100% Certified Pure Silk Mark &amp; Handloom Mark Assured</div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Men &amp; Boys Collection</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mens-pure-silk-dhotis" href="#">Pure Silk Dhotis &amp; Veshtis</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mens-angavastram-sets" href="#">Angavastram &amp; Shawl Sets</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mens-festive-kurtas" href="#">Raw Silk Festive Kurtas</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="boys-dhoti-shirt-sets" href="#">Boys Dhoti &amp; Silk Shirt Sets</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Kids &amp; Girls Handlooms</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="kids-pattu-pavadai" href="#">Traditional Pattu Pavadai Sets</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="girls-langa-voni" href="#">Teens Langa Voni &amp; Half Sarees</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="girls-anarkali-frocks" href="#">Handloom Cotton Frocks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="infant-first-kasavu" href="#">Infant Kasavu &amp; Naming Sets</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Customer Care &amp; Trust</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="track-order" href="#">Track Your Shipment</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="silk-mark-authenticity" href="#">Silk Mark Authentication</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shipping-returns" href="#">7-Day Exchange &amp; Returns</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-concierge" href="#">WhatsApp Concierge Support</a></nav></div></div><div class="max-w-7xl mx-auto px-margin pt-space-md border-0 flex flex-col md:flex-row items-center justify-between text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 Dakshin Vastra Handlooms Pvt Ltd. Handcrafted directly by our master weavers across South India.</p><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm uppercase text-secondary font-bold">100% Genuine Handloom • Secure COD Delivery</span></div></div></footer></body></html>
